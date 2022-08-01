@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            VANTA.BIRDS({
+                el: document.getElementById('vanta-birds'),
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                birdSize: 4.00,
+                wingSpan: 39.00,
+                speedLimit: 4.00,
+                separation: 100.00,
+                alignment: 100.00,
+                cohesion: 52.00,
+                quantity: 1.00,
+                backgroundAlpha: 0.00
+            })
+        })
+    </script>
+    <title></title>
+</head>
+<body>
+<script>
+        setTimeout(() => {
+        const main = document.querySelector('main')
+        main.style.opacity = 1
+        main.style.filter = 'blur(0px)'
+      }, 1000)
+</script>
+
+    <div id="vanta-birds"></div>
+    <main class="animated">
+      <header>
+        <img src="./images/go.png" width="200px" />
+        <h1>@yurdiansyah</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="https://yurdiansyah.vercel.app/">
+            <img src="./images/homepage.svg" alt="Homepage" width="20" />
+            Official Website
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCK6hAmsBBGi1ZEnK1fxn6kg">
+            <img src="./images/youtube.svg" alt="YouTube" width="20" />
+            YouTube
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/yurdiansyah143">
+            <img src="./images/twitter.svg" alt="Twitter" width="20" />
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/yurdigrfnn">
+            <img src="./images/github.svg" alt="GitHub" width="20" />
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </main>
+</body>
+</html>

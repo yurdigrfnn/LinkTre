@@ -1,0 +1,88 @@
+body , html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+body {
+    background: url(../images/bg01.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+main {
+    position: relative;
+}
+
+header {
+    margin-top: 6rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header > img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    box-shadow : 0 0 0.5rem 0.5rem rgba(0,0,0,0.5);
+}
+
+header > h1 {
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: bold;
+  border-radius: 0.5em;
+  background-color: #000a;
+  color: #fff;
+  padding: 0.6em 1em;
+  border: 1px solid #fffa;
+  backdrop-filter: blur(20px) saturate(160%) contrast(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+}
+
+ul {
+    list-style: none;
+    margin: 3rem  auto;
+    padding: 2rem;
+    align-items: center;
+    max-width: 640px;
+}
+
+ul > li {
+    margin-bottom: 1rem;
+    background-color: #9ca3af;
+    border-radius: 1rem;
+    backdrop-filter: blur(50px) saturate(160%) contrast(180%);
+    box-shadow: 0 0 0.5rem 0.5rem rgba(0,0,0,0.5/50%);
+}
+ul > li > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    gap: 1rem;
+    
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+#vanta-birds {
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main.animated {
+  opacity: 0;
+  filter: blur(10px);
+  transition: opacity 2s ease-in-out, filter 2s ease-in-out;
+}
